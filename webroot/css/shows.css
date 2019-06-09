@@ -1,0 +1,137 @@
+#body {
+margin-left:10%;
+font-family: ‘Lucida Console’, Monaco, monospace;
+}
+#header {
+    background-color:#123456;
+    color:white;
+    top: 0;
+    left: 0;
+    font-family: ‘Lucida Console’, Monaco, monospace;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+}
+#footer {
+    background-color: #123456;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    font-family: ‘Lucida Console’, Monaco, monospace;
+}
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.glowing-border:focus { 
+    outline: none;
+    border-color: #B8ED01;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.unselected:hover {
+background-color: #8bd5db;
+cursor: pointer;
+}
+
+.selected {
+background-color: #B8ED01;
+cursor: pointer;
+}
+
+.selected:hover {
+background-color: #B8ED01;
+cursor: pointer;
+}
+
+.selectors{
+ width:375px;
+ height:500px;
+ border: 2px solid #dadada;
+ border-radius: 7px;
+ font-family: ‘Lucida Console’, Monaco, monospace; 
+ background-color: #eeead1;
+}
+.selectors:focus { 
+    outline: none;
+    border-color: #B8ED01;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.selectors option{
+  width:375px;
+  height:20px;   
+  background-color: #eeead1;
+}
+.modern {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 15px;
+  background: #B8ED01;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 2px 2px rgba(0,0,0,0.3),
+    0 0 4px 1px rgba(0,0,0,0.2);
+
+  /* Font styles */
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255,255,255,0.7);
+}
+
+.modern:hover  { 
+background: #C7FE0A; 
+cursor: pointer;
+}
+.embossed-link {
+  box-shadow: 
+    inset 0 3px 2px rgba(255,255,255,.22), 
+    inset 0 -3px 2px rgba(0,0,0,.17), 
+    inset 0 20px 10px rgba(255,255,255,.12), 
+    0 0 4px 1px rgba(0,0,0,.1), 
+    0 3px 2px rgba(0,0,0,.2);
+}
+
+.modern.embossed-link {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 2px 2px rgba(0,0,0,0.3),
+    0 0 4px 1px rgba(0,0,0,0.2),
+    inset 0 3px 2px rgba(255,255,255,.22), 
+    inset 0 -3px 2px rgba(0,0,0,.15), 
+    inset 0 20px 10px rgba(255,255,255,.12), 
+    0 0 4px 1px rgba(0,0,0,.1), 
+    0 3px 2px rgba(0,0,0,.2);
+}
+.modern.embossed-link:active {
+  box-shadow: 
+    inset 0 -2px 1px rgba(255,255,255,0.2),
+    inset 0 3px 2px rgba(0,0,0,0.12);
+}
+#overlay {
+    background: gray;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index:200;
+}
+#loading {
+     position:fixed;
+     width:300px;
+     height:200px;
+     z-index:500;
+     top:50%;
+     left:50%;
+     margin:-100px 0 0 -200px;	
+     display:none;
+}

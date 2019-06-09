@@ -1,0 +1,18 @@
+#!/bin/sh
+SERVICE='deluged'
+
+pkill deluge-web 
+if ps ax | grep -v grep | grep $SERVICE > /dev/null
+then
+    deluge-web &
+else
+    $SERVICE
+   deluge-web &
+fi
+
+if ps ax | grep -v grep | grep $SERVICE > /dev/null
+then
+	echo "started"
+else
+	echo "error"
+fi
