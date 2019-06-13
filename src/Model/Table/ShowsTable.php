@@ -53,8 +53,9 @@ class ShowsTable extends Table
 	
 	public function getEpisode($showId)
 	{
+		$apiKey = "";
 		$http = new Client();
-		$response = $http->get('http://thetvdb.com/api/AF40E8352AA48067/series/' . $showId . '/all/en.xml');
+		$response = $http->get('http://thetvdb.com/api/' . $apiKey . '/series/' . $showId . '/all/en.xml');
 				if ($response->statusCode() == 200)
 		{
 			$xml = $response->xml;
